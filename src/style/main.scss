@@ -1,0 +1,238 @@
+$bg: blue;
+
+body {
+    margin-left: 0px;
+    margin-top: 0px;
+    margin-right: 0px;
+    margin-bottom: 0px;
+    font-family: 'Gugi', cursive;
+}
+
+.bgc-adidas img {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    z-index: 0;
+}
+
+.side-menu {
+    color: white;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(218, 137, 137, 0.274);
+    height: 100%;
+    width: 102px;
+}
+
+.side-menu div i {
+    font-size: 28px;
+    height: 30px;
+}
+
+.side-menu div span {
+    font-size: 18px;
+}
+
+.side-menu div {
+    padding: 10px;
+    text-align: center;
+}
+
+.side-menu div:hover:not(.text):not(.empty) {
+    background-color: rgba(218, 137, 137, 0.582);
+}
+
+.empty {
+    height: 30%;
+    opacity: 100%;
+}
+
+.search {
+    margin-left: 43%;
+    margin-top: 1.5%;
+    position: fixed;
+    z-index: 1;
+}
+
+.search input {
+    border: none;
+    border-radius: 15px;
+    width: 280px;
+    height: 34px;
+    background-color: rgba(241, 138, 138, 0.301);
+    color: white;
+    font-size: 24px;
+    text-align: center;
+}
+
+.search input::placeholder {
+    color: white;
+}
+
+.search input:focus {
+    outline: none;
+}
+
+.search input:-webkit-autofill:focus {
+    background-color: rgba(241, 138, 138, 0.301);
+}
+
+.search i {
+    color: white;
+    font-size: 20px;
+    position: absolute;
+    right: 10px;
+    top: 8px;
+}
+
+.search i:hover {
+    color: rgb(201, 98, 98);
+}
+
+.login {
+    position: fixed;
+    z-index: 1;
+    color: white;
+    margin-left: 92.3%;
+    margin-top: 27px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(241, 138, 138, 0.301);
+    border-radius: 20px;
+}
+
+.login:hover {
+    background-color: rgba(241, 138, 138, 0.582);
+    cursor: pointer;
+}
+
+.logout {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    color: white;
+    margin-left: 92.3%;
+    margin-top: 27px;
+    padding: 10px;
+    padding-left: 25px;
+    padding-right: 25px;
+    background-color: rgba(241, 138, 138, 0.301);
+    border-radius: 20px;
+}
+
+.logout:hover {
+    background-color: rgba(241, 138, 138, 0.582);
+    cursor: pointer;
+}
+
+.swiper-container {
+    display: block;
+    width: 800px;
+    height: 400px;
+    top: 12vw;
+    left: 20vw;
+    position: fixed;
+}
+
+.swiper-slide {
+    background-color: rgba(218, 137, 137, 0.582);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+
+}
+
+.swiper-pagination {
+    background-color: rgba(218, 137, 137, 0.582);
+}
+
+/*-------------------Login - Register----------------------------*/
+
+.login-form {
+    margin-left: 39.5%;
+    margin-top: 19%;
+    padding: 40px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(218, 137, 137, 0.274);
+}
+
+.login-form i {
+    position: absolute;
+    color: white;
+    margin-left: 325px;
+    margin-top: -40px;
+    font-size: 22px;
+}
+
+.login-form i:hover {
+    color: rgb(201, 98, 98);
+}
+
+.register-form {
+    margin-left: 39.5%;
+    margin-top: 19%;
+    padding: 40px;
+    padding-top: 60px;
+    padding-bottom: 80px;
+    border-radius: 20px;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(218, 137, 137, 0.274);
+}
+
+.register-form i {
+    position: absolute;
+    color: white;
+    margin-left: 325px;
+    margin-top: -40px;
+    font-size: 22px;
+}
+
+.register-form i:hover {
+    color: rgb(201, 98, 98);
+}
+
+.username input {
+    height: 28px;
+    width: 320px;
+    font-size: 22px;
+    font-family: 'Gugi', cursive;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.password {
+    padding-top: 15px;
+}
+
+.password input {
+    height: 28px;
+    width: 320px;
+    font-size: 22px;
+    font-family: 'Gugi', cursive;
+    border: none;
+    border-radius: 7px;
+    text-align: center;
+}
+
+.send {
+    margin-top: 15px;
+    margin-left: 80px;
+}
+
+.send input {
+    height: 36px;
+    width: 168px;
+    border-radius: 12px;
+    background-color: rgb(46, 211, 120);
+    border: none;
+    color: white;
+    font-size: 20px;
+}
