@@ -3,7 +3,7 @@ WebShop for my CV
 
 # The Domain for this website is either of the two:
 ###                                  [artonwork.com](https://artonwork.com)
-###                                  [159.69.222.127](https://159.69.222.127)
+###                                  [159.69.222.127](http://159.69.222.127)
 
 # What's in use:
 ####                - Webpack to bundle my code
