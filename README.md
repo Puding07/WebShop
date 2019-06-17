@@ -20,3 +20,8 @@ WebShop for my CV
                 
 The site runes with apache which uses mysql database with phpmyadmin installed on a linux server.
 I used both the firebase authentication and local database server just so you can see I do know how to use both!
+
+## Incompletion:
+####            - Responsiveness
+####            - Cart
+####            - User profile
