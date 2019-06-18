@@ -6,6 +6,7 @@ body {
     margin-right: 0px;
     margin-bottom: 0px;
     font-family: 'Gugi', cursive;
+    background-color: rgb(156, 95, 95);
 }
 
 .bgc-adidas img {
@@ -29,6 +30,10 @@ body {
     height: 30px;
 }
 
+.side-menu .empty i {
+    display: none;
+}
+
 .side-menu div span {
     font-size: 18px;
 }
@@ -49,7 +54,7 @@ body {
 
 .search {
     margin-left: 43%;
-    margin-top: 1.5%;
+    margin-top: 27px;
     position: fixed;
     z-index: 1;
 }
@@ -128,11 +133,12 @@ body {
 
 .swiper-container {
     display: block;
-    width: 800px;
-    height: 400px;
-    top: 12vw;
-    left: 20vw;
+    height: 65%;
+    width: 65%;
+    top:  18%;
+    left: 18%;
     position: fixed;
+    border-radius: 10px;
 }
 
 .swiper-slide {
@@ -235,4 +241,179 @@ body {
     border: none;
     color: white;
     font-size: 20px;
+}
+
+/*--------------------------------------------------------------------*/
+
+.slide1 {
+    display: flex;
+}
+
+@media screen and (max-width: 1140px) {
+    body {
+        background-color: rgb(156, 95, 95);
+    }
+    .bgc-adidas img {
+        display: none;
+    }
+    .login {
+        margin-left: 88%;
+    }
+    .logout {
+        margin-left: 88%;
+    }
+    .login-form {
+        margin-left: 35%;
+        margin-top: 18%;
+    }
+    .register-form {
+        margin-left: 35%;
+        margin-top: 18%;
+    }
+    .swiper-container {
+        left: 18%;
+        width: 75%
+    }
+}
+
+@media (max-width: 800px) {
+    .empty {
+        height: 10%;
+    }
+    .login {
+        margin-left: 83%;
+    }
+    .logout {
+        margin-left: 83%;
+    }
+    .login-form {
+        margin-left: 35%;
+        margin-top: 18%;
+    }
+    .register-form {
+        margin-left: 35%;
+        margin-top: 18%;
+    }
+    .swiper-container {
+        left: 18%;
+        width: 75%
+    }
+}
+
+
+@media screen and (max-width: 650px) {
+    .bgc-adidas img {
+        display: none;
+    }
+    .side-menu {
+        width: 95px;
+        height: 300px;
+    }
+    .side-menu div i {
+        display: none;
+    }
+    .empty {
+        height: 31.5px;
+    }
+    .side-menu .empty i {
+        display: block;
+    }
+    .empty:hover {
+        background-color: rgba(218, 137, 137, 0.274);
+    }
+    .home {
+        display: none;
+    }
+    .shop {
+        display: none;
+    }
+    .cart {
+        display: none;
+    }
+    .contact {
+        display: none;
+    }
+    .side-menu {
+        height: 50px;
+        z-index: 2;
+    }
+    .login {
+        margin-left: 75%;
+        margin-top: 5px;
+    }
+    .logout {
+        margin-left: 75%;
+        margin-top: 5px;
+    }
+    .login-form {
+        margin-left: 18%;
+        margin-top: 25%;
+        padding: 10px;
+        padding-top: 40px;
+    }
+    .login-form i {
+        margin-left: 87%;
+        margin-top: -33px;
+    }
+    .register-form {
+        margin-left: 18%;
+        margin-top: 25%;
+        padding: 10px;
+        padding-top: 40px;
+    }
+    .register-form i {
+        margin-left: 87%;
+        margin-top: -33px;
+    }
+    .search {
+        margin-top: 13%;
+        margin-left: 22%;
+    }
+    .swiper-container {
+        margin-top: 15%;
+        left: 10px;
+        width: 96%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 390px) {
+    .login {
+        margin-left: 65%;
+        margin-top: 5px;
+    }
+    .logout {
+        margin-left: 65%;
+        margin-top: 5px;
+    }
+    .login-form {
+        margin-left: 10px;
+        margin-top: 25%;
+        padding: 10px;
+        padding-top: 40px;
+    }
+    .login-form i {
+        margin-left: 302px;
+        margin-top: -33px;
+    }
+    .register-form {
+        margin-left: 10px;
+        margin-top: 32%;
+        padding: 10px;
+        padding-top: 40px;
+    }
+    .register-form i {
+        margin-left: 302px;
+        margin-top: -33px;
+    }
+    .search {
+        margin-top: 65px;
+        margin-left: 50px;
+    }
+    .swiper-container {
+        margin-top: 14%;
+        left: 10px;
+        width: 340px;
+        height: 320px;
+    }
 }

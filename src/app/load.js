@@ -6,8 +6,11 @@ let load = () => {
       login = document.querySelector('.login'),
       content = document.querySelector('.content'),
       swiperContainer = document.querySelector('.swiper-container'),
-      searchSnipet = document.querySelector('.search-snipet');
-  var counter = 1;
+      searchSnipet = document.querySelector('.search-snipet'),
+      sideMenu = document.querySelector('.side-menu'),
+      dropMenu = document.querySelector('#empty');
+  var counter = 1,
+      dropMenuCounter = 1;
 
   login.addEventListener('click', () => {
     console.log(counter);
@@ -60,7 +63,23 @@ let load = () => {
     //$(content).load('./product-content.html');
     /*$(swiperContainer).load('./product-content.html');
     $(searchSnipet).load('./search.html');*/
-    swiperContainer.style.display = 'block';
+    //swiperContainer.style.display = 'block';
+  });
+
+  dropMenu.addEventListener('click', () => {
+    if (dropMenuCounter % 2 != 0) {
+      for (let i = 1; i <= 4; i++) {
+        sideMenu.children[i].style.display = 'block';
+      }
+      sideMenu.style.height = '300px';
+      dropMenuCounter++;
+    } else {
+      for (let i = 1; i <= 4; i++) {
+        sideMenu.children[i].style.display = 'none';
+      }
+      sideMenu.style.height = '50px';
+      dropMenuCounter++;
+    }
   });
 }
 

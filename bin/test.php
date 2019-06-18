@@ -1,10 +1,17 @@
 <?php
-$array = [ 'Almost', 'Revive', 'Spirit Fire' ];
-echo $array[0];
-$arrays = [
-    ['Almost', 'Blind'],
-    ['Revive', 'Trasher'],
-    ['Spirit Fire', 'Spirit Water']
-];
-echo '  ' . json_encode($arrays) . '
-';
+$port = 8080;
+function stest() {
+    global  $port;
+    $fp = @fsockopen('localhost', $port);
+    if (!$fp) {
+        print 'Port not in use on ' . $port . PHP_EOL;
+        return true;
+    } else {
+        fclose($fp);
+        print 'Port in use on ' . $port . PHP_EOL;
+        $port++;
+        stest();
+    }
+}
+
+stest();

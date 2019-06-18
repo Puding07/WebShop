@@ -52,6 +52,7 @@ send.addEventListener('click', () => {
       var errorMessage = error.message;
       alert('Code: ' + errorCode + ' Message: ' + errorMessage);
     });
+    alert('Registration: Success!!');
   } else {
     alert('Password mismatch!!');
   }
