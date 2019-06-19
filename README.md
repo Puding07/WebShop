@@ -22,6 +22,7 @@ The site runes with apache which uses mysql database with phpmyadmin installed o
 I used both the firebase authentication and local database server just so you can see I do know how to use both!
 
 ## Incompletion:
-####            - Responsiveness
+####            ~~- Responsiveness~~
 ####            - Cart
 ####            - User profile
+####            - SQL Injection Prevention
