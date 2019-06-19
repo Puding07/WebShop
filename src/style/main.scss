@@ -300,51 +300,90 @@ body {
     }
 }
 
-
-@media screen and (max-width: 650px) {
+@media (max-width: 650px) {
     .bgc-adidas img {
         display: none;
     }
     .side-menu {
-        width: 95px;
-        height: 300px;
+        display: flex;
+        z-index: 2;
+        top: 86%;
+        background-color: rgba(218, 137, 137, 0.274);
+        height: 14%;
+        width: 100%;
+        justify-content: space-around;
+        align-items: center; 
     }
-    .side-menu div i {
+    .side-menu span {
         display: none;
+    }
+    .side-menu div:not(.empty) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    .side-menu div:hover:not(.text):not(.empty) {
+        background-color: rgba(218, 137, 137, 0);
+    }
+    .side-menu div:hover:not(.empty) i {
+        color: rgb(255, 151, 151);
+    }
+    .side-menu div:not(.empty) i {
+        font-size: 30px;
     }
     .empty {
-        height: 31.5px;
-    }
-    .side-menu .empty i {
-        display: block;
-    }
-    .empty:hover {
-        background-color: rgba(218, 137, 137, 0.274);
-    }
-    .home {
         display: none;
-    }
-    .shop {
-        display: none;
-    }
-    .cart {
-        display: none;
-    }
-    .contact {
-        display: none;
-    }
-    .side-menu {
-        height: 50px;
-        z-index: 2;
     }
     .login {
-        margin-left: 75%;
+        position: relative;
+        float: right;
+        margin-right: 1%;
+        margin-left: 0;
         margin-top: 5px;
     }
     .logout {
-        margin-left: 75%;
+        position: relative;
+        float: right;
+        margin-right: 1%;
+        margin-left: 0;
         margin-top: 5px;
     }
+    .login-form {
+        margin-left: 24%;
+        margin-right: 24%;
+        margin-top: 25%;
+        padding: 10px;
+        padding-top: 40px;
+    }
+    .login-form i {
+        margin-left: 87%;
+        margin-top: -33px;
+    }
+    .register-form {
+        margin-left: 24%;
+        margin-right: 24%;
+        margin-top: 25%;
+        padding: 10px;
+        padding-top: 40px;
+    }
+    .register-form i {
+        margin-left: 87%;
+        margin-top: -33px;
+    }
+    .search {
+        margin-top: 10%;
+        margin-left: 32%;
+        margin-right: 32%;
+    }
+    .swiper-container {
+        margin-top: 2%;
+        left: 2%;
+        width: 96%;
+        height: 60%;
+    }
+}
+
+@media (max-width: 500px) {
     .login-form {
         margin-left: 18%;
         margin-top: 25%;
@@ -367,53 +406,45 @@ body {
     }
     .search {
         margin-top: 13%;
-        margin-left: 22%;
+        margin-left: 26%;
     }
     .swiper-container {
-        margin-top: 15%;
-        left: 10px;
+        margin-top: 3%;
+        left: 2%;
         width: 96%;
         height: 60%;
     }
 }
 
-@media (max-width: 390px) {
-    .login {
-        margin-left: 65%;
-        margin-top: 5px;
-    }
-    .logout {
-        margin-left: 65%;
-        margin-top: 5px;
-    }
+@media screen and (max-width: 400px) {
     .login-form {
-        margin-left: 10px;
+        margin-left: 2.5%;
         margin-top: 25%;
         padding: 10px;
         padding-top: 40px;
     }
     .login-form i {
-        margin-left: 302px;
+        margin-left: 87%;
         margin-top: -33px;
     }
     .register-form {
-        margin-left: 10px;
-        margin-top: 32%;
+        margin-left: 2.5%;
+        margin-top: 25%;
         padding: 10px;
         padding-top: 40px;
     }
     .register-form i {
-        margin-left: 302px;
+        margin-left: 87%;
         margin-top: -33px;
     }
     .search {
-        margin-top: 65px;
-        margin-left: 50px;
+        margin-top: 18%;
+        margin-left: 12%;
     }
     .swiper-container {
-        margin-top: 14%;
-        left: 10px;
-        width: 340px;
-        height: 320px;
+        margin-top: 6%;
+        left: 2%;
+        width: 96%;
+        height: 60%;
     }
 }
