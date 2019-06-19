@@ -1,6 +1,6 @@
 import Swiper from 'swiper';
 var mySwiper = new Swiper ('.swiper-container');
-let ws = new WebSocket('ws://localhost:8080'),
+let ws = new WebSocket('ws://artonwork.com:8080'),
     search =  document.querySelector('.search-bar'),
     erase = document.querySelector('.fa-times-circle'),
     message = '', productName = [], productPrice = [], productInfo = [], productNumber = 0,
