@@ -56,11 +56,6 @@ module.exports = {
       chunks: ['main', 'firebase']
     }),
     new HTMLWebPackPlugin({
-      template: './src/public/product-content.html',
-      filename: './product-content.html',
-      chunks: ['swiper']
-    }),
-    new HTMLWebPackPlugin({
       template: './src/public/shop.html',
       filename: './shop.html',
       chunks: ['search', 'websocket', 'swiper']

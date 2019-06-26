@@ -20,14 +20,20 @@ search.addEventListener('keyup', () => {
   console.log(search.value);
   if (search.value == '') {
     for (let i = 0; i < 5; i++) {
-      slideContent[i].innerHTML = "";
+      slideContent[i].getElementsByTagName('div')[0].innerHTML = '';
+      slideContent[i].getElementsByTagName('div')[1].innerHTML = '';
+      slideContent[i].getElementsByTagName('div')[2].innerHTML = '';
+      slideContent[i].getElementsByTagName('div')[3].innerHTML = '';
     }
   }
 });
 
 erase.addEventListener('click', () => {
   for (let i = 0; i < 5; i++) {
-    slideContent[i].innerHTML = "";
+    slideContent[i].getElementsByTagName('div')[0].innerHTML = '';
+    slideContent[i].getElementsByTagName('div')[1].innerHTML = '';
+    slideContent[i].getElementsByTagName('div')[2].innerHTML = '';
+    slideContent[i].getElementsByTagName('div')[3].innerHTML = '';
   }
   mySwiper.slideReset(0, true);
   mySwiper.update();
@@ -42,7 +48,10 @@ ws.onmessage = (event) => {
   } else {
     productNumber = 0;
     for (let i = 1; i <= 4; i++) {
-      slideContent[i].innerHTML = '';
+      slideContent[i].getElementsByTagName('div')[0].innerHTML = '';
+      slideContent[i].getElementsByTagName('div')[1].innerHTML = '';
+      slideContent[i].getElementsByTagName('div')[2].innerHTML = '';
+      slideContent[i].getElementsByTagName('div')[3].innerHTML = '';
     }
   }
   message = message.slice(2,message.length);
@@ -55,6 +64,8 @@ ws.onmessage = (event) => {
     }
   }
   for (let i = 0; i <= productNumber; i++) {
-    slideContent[i].innerHTML = productName[i] + ' ' + productInfo[i] + ' Price: ' + productPrice[i] + '$';
+    slideContent[i].getElementsByTagName('div')[1].innerHTML = productName[i];
+    slideContent[i].getElementsByTagName('div')[2].innerHTML = productInfo[i];
+    slideContent[i].getElementsByTagName('div')[3].innerHTML = productPrice[i] + '$';
   }
 };

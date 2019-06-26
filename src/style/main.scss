@@ -88,6 +88,7 @@ body {
     position: absolute;
     right: 10px;
     top: 8px;
+    cursor: pointer;
 }
 
 .search i:hover {
@@ -178,6 +179,7 @@ body {
 
 .login-form i:hover {
     color: rgb(201, 98, 98);
+    cursor: pointer;
 }
 
 .register-form {
@@ -202,6 +204,7 @@ body {
 
 .register-form i:hover {
     color: rgb(201, 98, 98);
+    cursor: pointer;
 }
 
 .username input {
@@ -241,13 +244,121 @@ body {
     border: none;
     color: white;
     font-size: 20px;
+    cursor: pointer;
 }
 
-/*--------------------------------------------------------------------*/
+/*-----------------------------------Shop Items---------------------------------*/
 
-.slide1 {
+#slide-1 {
+    display: flex;
+    flex-direction: column;
+}
+#slide-2 {
+    display: flex;
+    flex-direction: column;
+}
+#slide-3 {
+    display: flex;
+    flex-direction: column;
+}
+#slide-4 {
+    display: flex;
+    flex-direction: column;
+}
+#slide-5 {
+    display: flex;
+    flex-direction: column;
+}
+
+.product-photo {
+
+}
+
+.product-name {
+
+}
+
+/*-----------------------------------Cart Items---------------------------------*/
+
+.cart-holder {
+    color: #fff;
+    margin-left: 16%;
+    margin-top: 9%;
+    width: 70%;
+    height: 60%;
+    position: fixed;
+    z-index: 1;
+    background-color: rgba(218, 137, 137, 0.274);
+    display: grid;
+    grid-template-columns: auto auto auto;
+    row-gap: 10px;
+    column-gap: 10px;
+}
+
+.cart-item {
+    background-color: rgba(218, 137, 137, 0.582);
+    font-size: 20px;
+}
+
+.cart-flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin-left: 8%;
+    margin-top: 10%;
+}
+
+.item-del {
+    float: right;
+    padding: 6px;
+    font-size: 20px;
+}
+
+.item-del:hover {
+    color: rgb(201, 76, 76);
+}
+
+.more-info {
+    font-size: 18px;
+    border: none;
+    border-radius: 5px;
+    color: #fff;
+    background-color: rgba(165, 209, 136, 0.788);
+    width: 35%;
+    cursor: pointer;
+}
+
+.summ-container {
+    position: fixed;
+    z-index: 1;
+    color: #fff;
+    background-color: rgba(218, 137, 137, 0.274);
+    margin-left: 16%;
     display: flex;
 }
+/*-----------------------------------Contact---------------------------------*/
+
+.contact-info {
+    position: fixed;
+    z-index: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    font-size: 22px;
+    top: 85%;
+    height: 15%;
+    width: 100%;
+}
+
+a:link {
+    font-style: none;
+    color: rgba(218, 137, 137, 0.918);
+}
+
+/*-----------------------------------Responsiveness---------------------------------*/
 
 @media screen and (max-width: 1140px) {
     body {
